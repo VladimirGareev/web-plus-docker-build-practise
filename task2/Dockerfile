@@ -1,5 +1,5 @@
 FROM node:16-alpine
 WORKDIR /home/ilovedocker/app
-COPY hello.sh /home/ilovedocker/app
-RUN cd /home/ilovedocker/app
-ENTRYPOINT sh hello.sh
+COPY hello.sh ./
+ENTRYPOINT ["sh", " hello.sh"]
+
